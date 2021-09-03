@@ -28,4 +28,5 @@ copy_file() {
         \cp -n ${dest_file} ${dest_file}.bak
         \cp -f ${src_file} ${dest_file}
     fi
+    dconf write /org/gnome/shell/extensions/dash-to-dock/apply-custom-theme true
 }
